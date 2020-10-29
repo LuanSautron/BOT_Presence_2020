@@ -48,13 +48,13 @@ class Student:
 
     def push_in_db(self):
         if self.email is None or self.profile_id is None:
-            return False
+            return -1
         if (check_mail_epitech(self.email) == 0):
-            return False
+            return -2
         try:
             query = "INSERT INTO profiles(profile_id, email) VALUES (?, ?)"
             self.cursor.execute(query, (self.profile_id, self.email))
             DBCo().conn.commit()
         except sqlite3.IntegrityError:
-            return False
-        return True
+            return -3
+        return 1
