@@ -71,5 +71,5 @@ async def on_message(message):
         if command == i[0]:
             await i[1](message, db)
 
-client.run("Njk3NTExMDQzNTEyOTI2MzE5.Xo4Vxw.UQzrhEenj-GWhybVc_gcw5AuS9Y")
+client.run("token")
 db.close();
