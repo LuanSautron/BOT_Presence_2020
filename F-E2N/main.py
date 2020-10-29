@@ -16,5 +16,5 @@ async def on_message(message):
     if msg != None:
         await message.author.send(msg)
 
-client.run("Njk3NTExMDQzNTEyOTI2MzE5.Xo4Vxw.UQzrhEenj-GWhybVc_gcw5AuS9Y")
+client.run("token")
 DBCo().close()
